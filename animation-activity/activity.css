@@ -16,6 +16,7 @@
   animation-name: bottom;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+
 }
 
 nav {
@@ -28,16 +29,27 @@ nav {
 }
 
 @keyframes top {
-  from {}
-  to {}
+  from {transform: rotate(0deg);
+        transform-origin: 0%;
+  }
+  to {transform: rotate(45deg);
+      transform-origin: -10%;
+  }
 }
 
 @keyframes middle {
-  from {}
-  to {}
+  0% {opacity: 100%;}
+  75% {opacity: 50%;}
+  100% {opacity: 0%}
 }
 
 @keyframes bottom {
-  from {}
-  to {}
+  from {
+    transform: rotate(0deg);
+    transform-origin: 0%
+  }
+  to {transform: rotate(-45deg);
+      transform-origin: -10%;
+  }
+  
 }
